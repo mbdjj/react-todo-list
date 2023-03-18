@@ -4,6 +4,7 @@ import "./App.css";
 import Filter from "./Filter";
 import ToDoList from "./ToDoList";
 import Task from "./Task";
+import NewTask from "./NewTask"
 
 function App() {
   var [hideCompleted, setHideCompleted] = useState(false);
@@ -20,6 +21,15 @@ function App() {
     console.log(`changed tasks to: ${temp}`)
   };
 
+  const addTask = (name) => {
+    const task = {
+      name: name,
+      completed: false
+    }
+
+    setTasks([...tasks, task])
+  }
+
   return (
     <div className="App">
       <Filter checked={hideCompleted} onClick={handleClick} />
@@ -34,6 +44,7 @@ function App() {
         })}
       </ToDoList>
       <div className="line"></div>
+      <NewTask addTask={addTask}/>
     </div>
   );
 }

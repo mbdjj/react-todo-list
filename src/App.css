@@ -15,3 +15,8 @@
   background-color: gray;
   width: 50vw;
 }
+
+/* ----- NewTask section ----- */
+.newTaskContainer {
+  display: flex;
+}
