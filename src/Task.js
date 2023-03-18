@@ -1,5 +1,3 @@
-import "./Task.css"
-
 export default function Task(props) {
   const task = props.task
 

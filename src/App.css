@@ -16,6 +16,45 @@
   width: 50vw;
 }
 
+/* ----- Filter section ----- */
+.filter {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+
+  cursor: default;
+}
+
+.filter p {
+  margin: 0;
+}
+
+/* ----- ToDoList section ----- */
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----- Task section ----- */
+.task {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+}
+
+.task p {
+  margin: 0;
+}
+
+.task.hide {
+  display: none;
+}
+
+.task.overline {
+  text-decoration: line-through;
+}
+
 /* ----- NewTask section ----- */
 .newTaskContainer {
   display: flex;

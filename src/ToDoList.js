@@ -1,5 +1,4 @@
 import React from "react"
-import "./ToDoList.css"
 
 export default function ToDoList(props) {
   return (
