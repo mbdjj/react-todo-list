@@ -10,8 +10,8 @@
 }
 
 .line {
-  height: 3px;
-  border-radius: 1.5px;
+  height: 2px;
+  border-radius: 1px;
   background-color: gray;
   width: 50vw;
 }

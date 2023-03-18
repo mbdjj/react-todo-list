@@ -1,0 +1,17 @@
+.task {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+}
+
+.task p {
+  margin: 0;
+}
+
+.task.hide {
+  display: none;
+}
+
+.task.overline {
+  text-decoration: line-through;
+}
