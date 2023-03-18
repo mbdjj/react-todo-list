@@ -15,6 +15,9 @@ function App() {
   return (
     <div className="App">
       <Filter checked={hideCompleted} onClick={handleClick}/>
+      <div className='line'></div>
+
+      <div className='line'></div>
     </div>
   );
 }

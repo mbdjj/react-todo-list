@@ -1,5 +1,9 @@
-div {
+.filter {
   display: flex;
   flex-flow: row nowrap;
-  background-color: aqua;
+  padding: 0;
+}
+
+.filter p {
+  margin: 0;
 }
