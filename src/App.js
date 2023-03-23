@@ -29,6 +29,8 @@ function App() {
     setTasks([...tasks, task]);
   };
 
+  const completedClass = hideCompleted ? "hide" : "overline"
+
   return (
     <div className="App">
       <Filter checked={hideCompleted} onClick={handleClick} />
@@ -44,11 +46,11 @@ function App() {
                   handleTaskClick(index);
                 }}
               />
+              <div className={`dotline ${task.completed ? completedClass : ""}`}></div>
             </div>
           );
         })}
       </ToDoList>
-      <div className="line"></div>
       <NewTask addTask={addTask} />
     </div>
   );

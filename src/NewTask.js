@@ -9,13 +9,13 @@ export default function NewTask({addTask}) {
   }
 
   const enterDown = event => {
-    if (event.key == "Enter") {
+    if (event.key === "Enter") {
       submitTask()
     }
   }
 
   const submitTask = () => {
-    if (taskName != "") {
+    if (taskName !== "") {
       addTask(taskName)
       setTaskName("")
     } else {
@@ -25,7 +25,7 @@ export default function NewTask({addTask}) {
 
   return (
     <div className="newTaskContainer">
-      <input type={"text"} onChange={handleTaskName} value={taskName} onKeyDown={enterDown}/>
+      <input type={"text"} placeholder={"New Task..."} onChange={handleTaskName} value={taskName} onKeyDown={enterDown}/>
       <button onClick={submitTask}>Add</button>
     </div>
   )
